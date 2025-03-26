@@ -12,9 +12,9 @@
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide relative">
-                    <img src="{{ asset('images/slide-img1.png') }}" class="w-full h-[400px] object-cover rounded-3xl" />
+                    <img src="{{ asset('images/slide-img1.png') }}" class="w-full lg:h-[400px] md:h-auto h-[150px] object-cover md:rounded-3xl rounded-xl" />
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <h2 class="text-emerald-700 mix-blend-multiply font-bold text-[80px]">
+                        <h2 class="text-emerald-700 mix-blend-multiply font-bold lg:text-[80px] md:text-[45px] text-[30px]">
                             You <span class="text-green-600">will gain with us</span>
                         </h2>
                     </div>
@@ -22,9 +22,9 @@
                 
                 <!-- Slide 2 -->
                 <div class="swiper-slide relative">
-                    <img src="{{ asset('images/slide-img1.png') }}" class="w-full h-[400px] object-cover rounded-3xl" />
+                    <img src="{{ asset('images/slide-img1.png') }}" class="w-full lg:h-[400px] object-cover md:rounded-3xl rounded-xl" />
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <h2 class="text-emerald-700 mix-blend-multiply font-bold text-[80px]">
+                        <h2 class="text-emerald-700 mix-blend-multiply font-bold lg:text-[80px] md:text-[45px] text-[30px]">
                             You <span class="text-green-600">will gain with us2</span>
                         </h2>
                     </div>
@@ -46,8 +46,8 @@
                         Local Shipping
                     </div>
 
-                    <div class="">
-                        <div class="mt-[-154px] mr-[20px]">
+                    <div class="md:block hidden">
+                        <div class="mt-[-154px] lg:mr-[20px] mr-[10px]">
                             <img src="{{ asset('images/undraw_destination.png') }}" alt="Illustration" class="w-[240px]" />
                         </div>
                     </div>
@@ -55,7 +55,7 @@
 
                 <!-- Form Section -->
                 <div class="border-2 border-emerald-50 px-5 py-8 rounded-b-lg rounded-tr-lg shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 relative">
-                    <div class="flex gap-4 w-3/5">
+                    <div class="flex md:flex-row flex-col gap-4 md:w-3/5">
                         <!-- City of Dispatch -->
                         <div class="flex items-center bg-gray-100 p-3 rounded-lg flex-1">
                             <span class="text-emerald-950 text-lg">
@@ -75,8 +75,8 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-end w-2/5">
-                        <button type="button" class="bg-roti-100 text-emerald-900 font-bold cursor-pointer px-6 py-3.5 rounded-lg hover:bg-roti-200 transition">
+                    <div class="flex justify-end md:w-2/5 w-full">
+                        <button type="button" class="bg-roti-100 text-emerald-900 font-bold cursor-pointer px-6 py-3.5 rounded-lg hover:bg-roti-200 transition md:w-auto w-full">
                             Get the Offers
                         </button>
                     </div>
@@ -87,37 +87,37 @@
     </div>
 
     <div class="container-box">
-        <div class="bg-roti-50 px-10 pt-6 pb-[200px] we-stand-out rounded-2xl">
+        <div class="bg-roti-50 px-10 pt-6 lg:pb-[200px] md:pb-[150px] pb-[80px] we-stand-out rounded-2xl">
             <div class="relative mb-10">
-                <h2 class="absolute w-full text-[55px] text-emerald-950/5 font-bold text-center">We Stand Out</h2>
-                <h2 class="text-[35px] text-emerald-950 font-bold text-center pt-10">We Stand Out</h2>
+                <h2 class="absolute w-full md:text-[55px] text-[35px] text-emerald-950/5 font-bold text-center">We Stand Out</h2>
+                <h2 class="md:text-[35px] text-[30px] text-emerald-950 font-bold text-center pt-10">We Stand Out</h2>
             </div>
 
-            <div class="flex justify-between">
+            <div class="flex lg:flex-row flex-col lg:justify-between">
                 <div class="">
-                    <div class="flex items-center">
+                    <div class="flex md:flex-row flex-col items-center">
                         <div class="relative">
                             <img src="{{ asset('images/star-shape.png') }}" alt="Illustration" class="w-[90px]" />
                             <img src="{{ asset('images/customer-service.png') }}" alt="Illustration" class="absolute inset-0 m-auto w-[40px]" />
                         </div>
-                        <div class="bg-roti-100 py-3 px-4 rounded-r-full ms-[-30px]">
-                            <p class="text-xl text-emerald-800 font-semibold ms-6 me-2">Top customer service for you</p>
+                        <div class="bg-roti-100 py-3 px-4 md:rounded-r-full rounded-full ms-[-30px]">
+                            <p class="lg:text-xl md:text-lg md:text-start text-center text-emerald-800 font-semibold md:ms-6 md:me-2">Top customer service for you</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center">
+                    <div class="flex md:flex-row flex-col items-center">
                         <div class="relative">
                             <img src="{{ asset('images/star-shape.png') }}" alt="Illustration" class="w-[90px]" />
                             <img src="{{ asset('images/email-icon.png') }}" alt="Illustration" class="absolute inset-0 m-auto w-[40px]" />
                         </div>
-                        <div class="bg-roti-100 py-3 px-4 rounded-r-full ms-[-30px]">
-                            <p class="text-xl text-emerald-800 font-semibold ms-6 me-2">Best prices from trusted shippers guaranteed</p>
+                        <div class="bg-roti-100 py-3 px-4 md:rounded-r-full rounded-full ms-[-30px]">
+                            <p class="lg:text-xl md:text-lg md:text-start text-center text-emerald-800 font-semibold md:ms-6 md:me-2">Best prices from trusted shippers guaranteed</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="">
-                    <img src="{{ asset('images/delivery-address.png') }}" alt="Illustration" class="w-[260px]" />
+                <div class="flex lg:justify-normal justify-center">
+                    <img src="{{ asset('images/delivery-address.png') }}" alt="Illustration" class="md:mt-0 mt-10 w-[260px]" />
                 </div>
             </div>
         </div>
@@ -125,8 +125,8 @@
 
     <div class="container-box py-20">
         <div class="relative mb-10">
-            <h2 class="absolute w-full text-[55px] text-emerald-950/5 font-bold text-center">Partners</h2>
-            <h2 class="text-[35px] text-emerald-950 font-bold text-center pt-10">Partners</h2>
+            <h2 class="absolute w-full md:text-[55px] text-[35px] text-emerald-950/5 font-bold text-center">Partners</h2>
+            <h2 class="md:text-[35px] text-[30px] text-emerald-950 font-bold text-center pt-10">Partners</h2>
         </div>
         
         <div class="swiper partnerSwiper">
