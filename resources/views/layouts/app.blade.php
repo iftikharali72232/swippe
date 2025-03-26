@@ -14,7 +14,7 @@
     <!-- Link Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="">
     <!-- Navbar -->
     <div class="navbar">
         <div class="bg-roti-50">
