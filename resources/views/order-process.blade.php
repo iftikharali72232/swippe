@@ -207,10 +207,14 @@
                         <textarea class="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-none bg-[#FAF8EC80]" placeholder="Example" required></textarea>
                     </div>
 
-                    <div class="lg:col-span-3 md:col-span-2 mt-6 flex justify-end">
-                        <button class="bg-emerald-400 text-emerald-950 px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-600 cursor-pointer" onclick="prevTab('recipient')">
+                    <div class="lg:col-span-3 md:col-span-2 mt-6 flex md:flex-row flex-col justify-between md:space-y-none space-y-3">
+                        <button class="bg-emerald-400 text-emerald-950 px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-600 cursor-pointer md:w-auto w-full" onclick="prevTab('recipient')">
                             <i class="fa-solid fa-arrow-left"></i>
                             <span>Back</span>
+                        </button>
+
+                        <button class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer md:w-auto w-full" onclick="nextTab('shipment')">
+                            Receipt of the Shipping Document
                         </button>
                     </div>
                 </div>               
