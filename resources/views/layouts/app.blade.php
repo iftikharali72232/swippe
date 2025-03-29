@@ -68,7 +68,30 @@
                     <div id="navMenu" class="hidden lg:flex flex-col lg:flex-row lg:items-center absolute lg:static top-30 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0 space-y-4 lg:space-y-0 lg:space-x-6 z-50">
                         <div class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 me-14">
                             <a href="#" class="font-bold hover:underline">Home</a>
-                            <a href="#" class="font-bold text-emerald-800 hover:underline">Hint</a>
+                            <div class="relative">
+                                <button type="button" id="hintDropdownBtn" class="flex items-center cursor-pointer space-x-1 font-bold text-emerald-800 hover:underline">
+                                    <span>Hint</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+
+                                <!-- Dropdown Menu -->
+                                <div id="hintDropdown" class="hidden absolute lg:mt-2 bg-white min-w-[160px] shadow-lg rounded-md">
+                                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        <img src="{{ asset('images/reports-icon.png') }}" class="w-[17px] h-[17px]" alt="Reports Icon">
+                                        <span>Reports</span>
+                                    </a>
+                                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        <img src="{{ asset('images/settings-icon.png') }}" class="w-[20px] h-[20px]" alt="Settings Icon">
+                                        <span>Settings</span>
+                                    </a>
+                                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        <img src="{{ asset('images/settlement-icon.png') }}" class="w-[20px] h-[20px]" alt="Settlement Icon">
+                                        <span>Settlement</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Dropdown Button -->
@@ -219,6 +242,11 @@
             document.getElementById("dropdownMenu").classList.toggle("hidden");
         });
 
+        // Toggle Hint Dropdown
+        document.getElementById("hintDropdownBtn").addEventListener("click", function () {
+            document.getElementById("hintDropdown").classList.toggle("hidden");
+        });
+        
         // Toggle Login Dropdown
         document.getElementById("loginDropdownBtn").addEventListener("click", function () {
             document.getElementById("loginDropdown").classList.toggle("hidden");

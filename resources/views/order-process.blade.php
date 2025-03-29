@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="md:col-span-2 mt-6 flex justify-end">
-                        <button class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer" onclick="nextTab('recipient')">
+                        <button type="button" class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer" onclick="nextTab('recipient')">
                             <span>Next</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -144,11 +144,11 @@
                     </div>
 
                     <div class="md:col-span-2 mt-6 flex justify-between">
-                        <button class="bg-emerald-400 text-emerald-950 px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-600 cursor-pointer" onclick="prevTab('sender')">
+                        <button type="button" class="bg-emerald-400 text-emerald-950 px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-600 cursor-pointer" onclick="prevTab('sender')">
                             <i class="fa-solid fa-arrow-left"></i>
                             <span>Back</span>
                         </button>
-                        <button class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer" onclick="nextTab('shipment')">
+                        <button type="button" class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer" onclick="nextTab('shipment')">
                             <span>Next</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -208,12 +208,12 @@
                     </div>
 
                     <div class="lg:col-span-3 md:col-span-2 mt-6 flex md:flex-row flex-col justify-between md:space-y-none space-y-3">
-                        <button class="bg-emerald-400 text-emerald-950 px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-600 cursor-pointer md:w-auto w-full" onclick="prevTab('recipient')">
+                        <button type="button" class="bg-emerald-400 text-emerald-950 px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-600 cursor-pointer md:w-auto w-full" onclick="prevTab('recipient')">
                             <i class="fa-solid fa-arrow-left"></i>
                             <span>Back</span>
                         </button>
 
-                        <button class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer md:w-auto w-full" onclick="nextTab('shipment')">
+                        <button type="button" class="bg-emerald-700 text-white px-6 py-2 rounded-md font-semibold flex items-center gap-2 hover:bg-emerald-800 cursor-pointer md:w-auto w-full">
                             Receipt of the Shipping Document
                         </button>
                     </div>

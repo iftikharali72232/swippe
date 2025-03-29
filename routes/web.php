@@ -21,3 +21,11 @@ Route::get('/checkout', function () {
 Route::get('/order-process', function () {
     return view('order-process');
 });
+
+Route::get('/reports', function () {
+    return view('reports');
+});
+
+Route::get('/settings', function () {
+    return view('settings');
+});

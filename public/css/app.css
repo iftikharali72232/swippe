@@ -357,7 +357,7 @@
     position: relative !important;
     width: auto !important;
     margin: 0px !important;
-    margin-top: 50px !important;
+    margin-top: 51px !important;
 }
 
 .partnerSwiper .swiper-button-prev:after {
@@ -424,4 +424,53 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* table design */
+.swippe-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid var(--emerald-600);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swippe-table thead {
+    background-color: var(--emerald-700);
+    border: 1px solid var(--emerald-700);
+    color: white;
+}
+
+/* Apply border to table headers and cells */
+.swippe-table th, .swippe-table td {
+    padding: 15px 10px;
+}
+
+.swippe-table tbody tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.swippe-table tbody tr:nth-child(even) {
+    background-color: var(--emerald-50);
+}
+
+/* Round top-left corner */
+.swippe-table thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* Round top-right corner */
+.swippe-table thead tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Round bottom-left corner */
+.swippe-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+/* Round bottom-right corner */
+.swippe-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
 }
