@@ -8,9 +8,9 @@
     <div class="flex lg:flex-row flex-col justify-between gap-6">
         <div class="lg:w-4/6">
             <div class="flex md:flex-row flex-col justify-between items-center mb-4">
-                <h2 class="text-emerald-950 text-lg font-semibold">1 item available in the cart</h2>
+                <h2 class="text-emerald-950 text-lg font-semibold">1 {{ __('messages.item_available_in_the_cart') }}</h2>
                 <button class="border border-emerald-600 hover:text-emerald-50 text-emerald-600 px-4 py-2 rounded-lg hover:bg-emerald-600 cursor-pointer md:w-auto w-full">
-                    Add another item
+                    {{ __('messages.add_another_item') }}
                 </button>
             </div>
             
@@ -18,10 +18,10 @@
                 <table class="w-full border-collapse ">
                     <thead class="bg-emerald-50 font-semibold">
                         <tr>
-                            <th class="px-5 py-3 text-start rounded-tl-lg whitespace-nowrap">Shipping Company</th>
-                            <th class="px-5 py-3 text-start whitespace-nowrap">City of Delivery</th>
-                            <th class="px-5 py-3 text-start whitespace-nowrap">Cost</th>
-                            <th class="px-5 py-3 text-start rounded-tr-lg whitespace-nowrap">Quantity</th>
+                            <th class="px-5 py-3 text-start rounded-tl-lg whitespace-nowrap">{{ __('messages.shipping_company') }}</th>
+                            <th class="px-5 py-3 text-start whitespace-nowrap">{{ __('messages.city_of_delivery') }}</th>
+                            <th class="px-5 py-3 text-start whitespace-nowrap">{{ __('messages.cost') }}</th>
+                            <th class="px-5 py-3 text-start rounded-tr-lg whitespace-nowrap">{{ __('messages.quantity') }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -43,33 +43,33 @@
                     <i class="fa-solid fa-trash-can"></i>
                 </button>
 
-                <button type="button" class="bg-emerald-700 cursor-pointer text-white px-10 py-3 rounded-lg hover:bg-emerald-800">Payment</button>
+                <button type="button" class="bg-emerald-700 cursor-pointer text-white px-10 py-3 rounded-lg hover:bg-emerald-800">{{ __('messages.payment') }}</button>
             </div>
         </div>
 
         <div class="lg:w-2/6">
             <div class="border-2 border-emerald-950 rounded-lg p-5">
                 <div class="">
-                    <h3 class="text-2xl text-emerald-900 font-semibold mb-2">Order details</h3>
+                    <h3 class="text-2xl text-emerald-900 font-semibold mb-2">{{ __('messages.order_details') }}</h3>
                     <div class="flex justify-between py-2 text-emerald-700">
-                        <span class="font-semibold">Quantity</span>
-                        <span>10 Policy</span>
+                        <span class="font-semibold">{{ __('messages.quantity') }}</span>
+                        <span>10 {{ __('messages.policy') }}</span>
                     </div>
                     <div class="flex justify-between border-b py-2 text-emerald-700">
-                        <span class="font-semibold">Subtotal</span>
+                        <span class="font-semibold">{{ __('messages.subtotal') }}</span>
                         <span>990.00 SR</span>
                     </div>
                     <div class="flex justify-between font-bold py-2 text-emerald-950">
-                        <span class="font-semibold">Total</span>
+                        <span class="font-semibold">{{ __('messages.total') }}</span>
                         <span>990.00 SR</span>
                     </div>
                 </div>
                 
                 <div class="mt-10 mb-2">
-                    <h3 class="text-2xl text-emerald-900 font-semibold mb-2">Discount code</h3>
+                    <h3 class="text-2xl text-emerald-900 font-semibold mb-2">{{ __('messages.discount_code') }}</h3>
                     <div class="flex">
-                        <input type="text" placeholder="Enter discount code" class="bg-roti-50 border border-gray-100 p-2 flex-1 rounded-l-lg focus:outline-none">
-                        <button class="bg-green-700 text-white px-4 py-2 rounded-r-lg hover:bg-green-800">Apply</button>
+                        <input type="text" placeholder="{{ __('messages.enter_discount_code') }}" class="bg-roti-50 border border-gray-100 p-2 flex-1 rounded-l-lg focus:outline-none">
+                        <button class="bg-green-700 text-white px-4 py-2 rounded-r-lg hover:bg-green-800">{{ __('messages.apply') }}</button>
                     </div>
                 </div>
             </div>

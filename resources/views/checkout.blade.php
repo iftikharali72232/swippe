@@ -6,13 +6,13 @@
 
 <div class="container-box py-10">
     <a href="#" class="text-2xl text-emerald-900 font-semibold">
-        <i class="fa-solid fa-arrow-left"></i>
-        <span>Payment</span>
+        <i class="fa-solid fa-arrow-left rotate-[0deg] rtl:rotate-[180deg]"></i>
+        <span>{{ __('messages.payment') }}</span>
     </a>
 
     <div class="flex lg:flex-row flex-col justify-between gap-6 mt-6">
         <div class="lg:w-4/6 border-2 border-emerald-950 rounded-lg p-5">
-            <h3 class="text-2xl text-emerald-900 font-semibold mb-2">Choose Payment Method</h3>
+            <h3 class="text-2xl text-emerald-900 font-semibold mb-2">{{ __('messages.choose_payment_method') }}</h3>
             <div class="grid md:grid-cols-2 gap-4">
                 <label class="flex justify-between items-center border-2 border-emerald-950 rounded-lg p-3 cursor-pointer peer-checked:border-emerald-950">
                     <div class="">
@@ -58,24 +58,24 @@
 
         <div class="lg:w-2/6">
             <div class="border-2 border-emerald-950 rounded-lg p-5">
-                <h3 class="text-2xl text-emerald-900 font-semibold mb-2">Order details</h3>
+                <h3 class="text-2xl text-emerald-900 font-semibold mb-2">{{ __('messages.order_details') }}</h3>
                 <div class="flex justify-between py-2 text-emerald-700">
-                    <span class="font-semibold">Quantity</span>
-                    <span>10 Policy</span>
+                    <span class="font-semibold">{{ __('messages.quantity') }}</span>
+                    <span>10 {{ __('messages.policy') }}</span>
                 </div>
                 <div class="flex justify-between border-b py-2 text-emerald-700">
-                    <span class="font-semibold">Subtotal</span>
+                    <span class="font-semibold">{{ __('messages.subtotal') }}</span>
                     <span>990.00 SR</span>
                 </div>
                 <div class="flex justify-between font-bold py-2 text-emerald-950">
-                    <span class="font-semibold">Total</span>
+                    <span class="font-semibold">{{ __('messages.total') }}</span>
                     <span>990.00 SR</span>
                 </div>
             </div>
 
             <div class="mt-10">
                 <button type="button" class="bg-emerald-700 cursor-pointer text-white px-10 py-3 rounded-lg hover:bg-emerald-800 w-full">
-                    Complete Payment
+                    {{ __('messages.complete_payment') }}
                 </button>
             </div>
         </div>

@@ -15,7 +15,7 @@
                     <img src="{{ asset('images/slide-img1.png') }}" class="w-full lg:h-[400px] md:h-auto h-[150px] object-cover md:rounded-3xl rounded-xl" />
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 class="text-emerald-700 mix-blend-multiply font-bold lg:text-[80px] md:text-[45px] text-[30px]">
-                            You <span class="text-green-600">will gain with us</span>
+                            {!! __('messages.you_will_gain_with_us') !!}
                         </h2>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                     <img src="{{ asset('images/slide-img1.png') }}" class="w-full lg:h-[400px] object-cover md:rounded-3xl rounded-xl" />
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 class="text-emerald-700 mix-blend-multiply font-bold lg:text-[80px] md:text-[45px] text-[30px]">
-                            You <span class="text-green-600">will gain with us2</span>
+                            {!! __('messages.you_will_gain_with_us') !!}
                         </h2>
                     </div>
                 </div>
@@ -38,12 +38,14 @@
     <div class="container-box py-20">
         <div class="relative w-full bg-emerald-gradient-to-b text-white p-8 rounded-lg">
             <!-- Top Text -->
-            <h2 class="text-2xl font-bold mb-8">We've made it easy for you ...</h2>
+            <h2 class="text-2xl font-bold mb-8">
+                {{ __('messages.we_have_made_it') }}
+            </h2>
             
             <div class="">
                 <div class="flex justify-between">
                     <div class="bg-emerald-50 text-emerald-900 font-bold px-4 py-2 rounded-t-lg">
-                        Local Shipping
+                        {{ __('messages.local_shipping') }}
                     </div>
 
                     <div class="md:block hidden">
@@ -61,7 +63,7 @@
                             <span class="text-emerald-950 text-lg">
                                 <i class="fa-solid fa-location-dot"></i>
                             </span>
-                            <input type="text" placeholder="City of Dispatch"
+                            <input type="text" placeholder="{{ __('messages.city_of_dispatch') }}"
                             class="bg-transparent outline-none ml-2 text-gray-700 w-full" />
                         </div>
 
@@ -70,14 +72,14 @@
                             <span class="text-emerald-950 text-lg">
                                 <i class="fa-solid fa-location-dot"></i>
                             </span>
-                            <input type="text" placeholder="Destination City"
+                            <input type="text" placeholder="{{ __('messages.destination_city') }}"
                             class="bg-transparent outline-none ml-2 text-gray-700 w-full" />
                         </div>
                     </div>
 
                     <div class="flex justify-end md:w-2/5 w-full">
                         <button type="button" class="bg-roti-100 text-emerald-900 font-bold cursor-pointer px-6 py-3.5 rounded-lg hover:bg-roti-200 transition md:w-auto w-full">
-                            Get the Offers
+                            {{ __('messages.get_the_offers') }}
                         </button>
                     </div>
                 </div>
@@ -89,8 +91,8 @@
     <div class="container-box">
         <div class="bg-roti-50 px-10 pt-6 lg:pb-[200px] md:pb-[150px] pb-[80px] we-stand-out rounded-2xl">
             <div class="relative mb-10">
-                <h2 class="absolute w-full md:text-[55px] text-[35px] text-emerald-950/5 font-bold text-center">We Stand Out</h2>
-                <h2 class="md:text-[35px] text-[30px] text-emerald-950 font-bold text-center pt-10">We Stand Out</h2>
+                <h2 class="absolute w-full md:text-[55px] text-[35px] text-emerald-950/5 font-bold text-center">{{ __('messages.we_stand_out') }}</h2>
+                <h2 class="md:text-[35px] text-[30px] text-emerald-950 font-bold text-center pt-10">{{ __('messages.we_stand_out') }}</h2>
             </div>
 
             <div class="flex lg:flex-row flex-col lg:justify-between">
@@ -101,7 +103,7 @@
                             <img src="{{ asset('images/customer-service.png') }}" alt="Illustration" class="absolute inset-0 m-auto w-[40px]" />
                         </div>
                         <div class="bg-roti-100 py-3 px-4 md:rounded-r-full rounded-full ms-[-30px]">
-                            <p class="lg:text-xl md:text-lg md:text-start text-center text-emerald-800 font-semibold md:ms-6 md:me-2">Top customer service for you</p>
+                            <p class="lg:text-xl md:text-lg md:text-start text-center text-emerald-800 font-semibold md:ms-6 md:me-2">{{ __('messages.top_customer_service') }}</p>
                         </div>
                     </div>
 
@@ -111,7 +113,7 @@
                             <img src="{{ asset('images/email-icon.png') }}" alt="Illustration" class="absolute inset-0 m-auto w-[40px]" />
                         </div>
                         <div class="bg-roti-100 py-3 px-4 md:rounded-r-full rounded-full ms-[-30px]">
-                            <p class="lg:text-xl md:text-lg md:text-start text-center text-emerald-800 font-semibold md:ms-6 md:me-2">Best prices from trusted shippers guaranteed</p>
+                            <p class="lg:text-xl md:text-lg md:text-start text-center text-emerald-800 font-semibold md:ms-6 md:me-2">{{ __('messages.best_prices_from_trusted_shippers') }}</p>
                         </div>
                     </div>
                 </div>
@@ -125,8 +127,8 @@
 
     <div class="container-box py-20">
         <div class="relative mb-10">
-            <h2 class="absolute w-full md:text-[55px] text-[35px] text-emerald-950/5 font-bold text-center">Partners</h2>
-            <h2 class="md:text-[35px] text-[30px] text-emerald-950 font-bold text-center pt-10">Partners</h2>
+            <h2 class="absolute w-full md:text-[55px] text-[35px] text-emerald-950/5 font-bold text-center">{{ __('messages.partners') }}</h2>
+            <h2 class="md:text-[35px] text-[30px] text-emerald-950 font-bold text-center pt-10">{{ __('messages.partners') }}</h2>
         </div>
         
         <div class="swiper partnerSwiper">
