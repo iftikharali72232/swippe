@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'My Laravel App')</title>
+    <title>@yield('title', 'Swippe')</title>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -110,7 +110,7 @@
 
                             <!-- Dropdown Menu -->
                             <div id="loginDropdown" class="hidden absolute lg:mt-2 bg-white min-w-[130px] shadow-lg rounded-md">
-                                <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">{{ __('messages.signin') }}</a>
+                                <a href="#" id="loginModalOpenBtn" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">{{ __('messages.signin') }}</a>
                                 <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">{{ __('messages.register') }}</a>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
     </div>
 
     <!-- Page Content -->
-    <div class="container mx-auto p-6">
+    <div class="py-6">
         @yield('content')
     </div>
 
@@ -240,8 +240,66 @@
         </div>
     </div>
 
+    <!-- Login Modal Overlay -->
+    <div id="loginModal" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 hidden md:px-0 px-6">
+        
+        <!-- Modal Box -->
+        <div class="bg-white rounded-3xl shadow-lg lg:w-1/2 md:w-2/3 md:py-12 py-10 lg:px-30 md:px-14 px-5 relative">
+            <!-- Close Button -->
+            <button id="loginModalCloseBtn" class="absolute top-0 ltr:right-0 rtl:left-0 text-white bg-emerald-800 hover:bg-emerald-900 ltr:rounded-tr-2xl ltr:rounded-bl-2xl rtl:rounded-tl-2xl rtl:rounded-br-2xl px-6 py-3 text-sm cursor-pointer">
+                <i class="fa-solid fa-x"></i>
+            </button>
+
+            <!-- Title -->
+            <h2 class="text-4xl font-bold text-emerald-900 text-center mb-10">{{ __('messages.login') }}</h2>
+
+            <!-- Email Field -->
+            <div class="mb-4">
+                <label class="block text-gray-500 mb-1">{{ __('messages.email') }}</label>
+                <input type="email" placeholder="Example@gmail.com"
+                    class="w-full px-4 py-3 bg-roti-50 border border-gray-300 rounded-xl focus:outline-none">
+            </div>
+
+            <!-- Password Field -->
+            <div class="mb-2">
+                <label class="block text-gray-500 mb-1">{{ __('messages.password') }}</label>
+                <input type="password" placeholder="********" class="w-full px-4 py-3 bg-roti-50 border border-gray-300 rounded-xl focus:outline-none">
+            </div>
+
+            <!-- Remember me & Forgot Password -->
+            <div class="flex justify-between items-center text-sm mt-2 mb-4 font-semibold">
+                <label class="inline-flex items-center">
+                <input type="checkbox" class="form-checkbox text-emerald-800">
+                <span class="ml-2 text-gray-700">{{ __('messages.remember_me') }}</span>
+                </label>
+                <a href="#" class="text-emerald-800 hover:underline">{{ __('messages.forgot_password') }}</a>
+            </div>
+
+            <!-- Login Button -->
+             <div class="flex justify-center pt-4">
+                <button type="button" class="bg-emerald-800 cursor-pointer text-white px-10 py-2.5 rounded-lg hover:bg-emerald-900 transition">{{ __('messages.login') }}</button>
+             </div>
+
+            <!-- Register Link -->
+            <p class="text-center text-sm mt-4 text-gray-700">
+                <span>{{ __('messages.if_you_donot_have_an_account') }}</span> 
+                <a href="#" class="text-emerald-800 font-semibold hover:underline">{{ __('messages.register_now') }}</a>
+            </p>
+        </div>
+    </div>
+
     <script>
         $(document).ready(function() {
+            // Login Modal
+            $('#loginModalOpenBtn').on('click', function() {
+                $('#loginModal').removeClass('hidden');
+            });
+
+            $('#loginModalCloseBtn').on('click', function() {
+                $('#loginModal').addClass('hidden');
+            });
+
+            // Language Switching
             let savedLang = localStorage.getItem('lang') || "{{ session('lang', 'en') }}";
 
             if (savedLang === 'ar') {

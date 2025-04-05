@@ -37,4 +37,32 @@ Route::middleware(['language'])->group(function () {
     Route::get('/settings', function () {
         return view('settings');
     });
+
+    Route::get('/settlement', function () {
+        return view('settlement');
+    });
+
+    Route::get('/register', function () {
+        return view('register');
+    });
+
+    Route::get('/email_confirmation', function () {
+        return view('email_confirmation');
+    });
+
+    Route::get('/forgot_password', function () {
+        return view('forgot_password');
+    });
+
+    Route::get('/new_password', function () {
+        return view('new_password');
+    });
+
+    Route::get('/about_us', function () {
+        return view('about_us');
+    });
+
+    Route::get('/privacy_policy', function () {
+        return view('privacy_policy');
+    });
 });
