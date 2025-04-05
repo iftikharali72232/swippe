@@ -160,5 +160,8 @@ return [
     'we_offer_card2' => "أسعار <br>منافسة",
     'we_offer_card3' => "إجراءات <br>بسيطة وسريعة",
     'we_offer_card4' => "دعم فني <br>مستمر",
-
+    'pages' => "الصفحات",
+    'cart' => "عربة التسوق",
+    'checkout' => "إتمام الشراء",
+    'order_process' => "معالجة الطلب",
 ];

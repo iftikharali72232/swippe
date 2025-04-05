@@ -71,10 +71,10 @@
 
                     <!-- Navigation Menu -->
                     <div id="navMenu" class="hidden lg:flex flex-col lg:flex-row lg:items-center absolute lg:static top-30 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0 space-y-4 lg:space-y-0 lg:space-x-6 z-50">
-                        <div class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 me-14">
+                        <div class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 lg:me-14">
                             <a href="#" class="font-bold hover:underline">{{ __('messages.home') }}</a>
                             <div class="relative">
-                                <button type="button" id="hintDropdownBtn" class="flex items-center cursor-pointer space-x-1 font-bold text-emerald-800 hover:underline">
+                                <button type="button" id="hintDropdownBtn" class="flex items-center lg:justify-normal justify-between cursor-pointer space-x-1 font-bold text-emerald-800 hover:underline lg:w-auto w-full">
                                     <span>{{ __('messages.hint') }}</span>
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -82,18 +82,67 @@
                                 </button>
 
                                 <!-- Dropdown Menu -->
-                                <div id="hintDropdown" class="hidden absolute lg:mt-2 bg-white min-w-[160px] shadow-lg rounded-md">
-                                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                <div id="hintDropdown" class="hidden lg:absolute lg:mt-2 bg-white lg:min-w-[160px] w-full  lg:shadow-lg rounded-md">
+                                    <a href="/reports" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md lg:w-auto w-full">
                                         <img src="{{ asset('images/reports-icon.png') }}" class="w-[17px] h-[17px]" alt="Reports Icon">
                                         <span>{{ __('messages.reports') }}</span>
                                     </a>
-                                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                    <a href="/settings" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md lg:w-auto w-full">
                                         <img src="{{ asset('images/settings-icon.png') }}" class="w-[20px] h-[20px]" alt="Settings Icon">
                                         <span>{{ __('messages.settings') }}</span>
                                     </a>
-                                    <a href="#" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                    <a href="/settlement" class="flex items-center space-x-3 px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md lg:w-auto w-full">
                                         <img src="{{ asset('images/settlement-icon.png') }}" class="w-[20px] h-[20px]" alt="Settlement Icon">
                                         <span>{{ __('messages.settlement') }}</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Dropdown Button -->
+                            <div class="relative">
+                                <button type="button" id="pagesDropdownBtn" class="flex lg:justify-normal justify-between items-center cursor-pointer space-x-1 hover:underline lg:w-auto w-full">
+                                    <span>{{ __('messages.pages') }}</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+
+                                <!-- Dropdown Menu -->
+                                <div id="pagesDropdown" class="hidden lg:absolute lg:mt-2 bg-white lg:min-w-[180px] w-full lg:shadow-lg rounded-md">
+                                    <a href="/about_us" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.about_title') }}
+                                    </a>
+                                    
+                                    <a href="/cart" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.cart') }}
+                                    </a>
+                                    
+                                    <a href="/checkout" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.checkout') }}
+                                    </a>
+                                    
+                                    <a href="/current-offers" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.current_offers') }}
+                                    </a>
+                                    
+                                    <a href="/email_confirmation" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.confirm_your_email') }}
+                                    </a>
+                                    
+                                    <a href="/forgot_password" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.forgot_password') }}
+                                    </a>
+                                    
+                                    <a href="/new_password" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.new_password') }}
+                                    </a>
+                                    
+                                    <a href="/order-process" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.order_process') }}
+                                    </a>
+                                    
+                                    <a href="/privacy_policy" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.privacy_policy') }}
                                     </a>
                                 </div>
                             </div>
@@ -101,7 +150,7 @@
 
                         <!-- Dropdown Button -->
                         <div class="relative">
-                            <button type="button" id="loginDropdownBtn" class="flex items-center cursor-pointer space-x-1 hover:underline">
+                            <button type="button" id="loginDropdownBtn" class="flex lg:justify-normal justify-between items-center cursor-pointer space-x-1 hover:underline lg:w-auto w-full">
                                 <span>{{ __('messages.login') }}</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -109,9 +158,9 @@
                             </button>
 
                             <!-- Dropdown Menu -->
-                            <div id="loginDropdown" class="hidden absolute lg:mt-2 bg-white min-w-[130px] shadow-lg rounded-md">
+                            <div id="loginDropdown" class="hidden lg:absolute lg:mt-2 bg-white lg:min-w-[130px] w-full lg:shadow-lg rounded-md">
                                 <a href="#" id="loginModalOpenBtn" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">{{ __('messages.signin') }}</a>
-                                <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">{{ __('messages.register') }}</a>
+                                <a href="/register" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">{{ __('messages.register') }}</a>
                             </div>
                         </div>
 
@@ -335,6 +384,11 @@
         // Toggle Login Dropdown
         document.getElementById("loginDropdownBtn").addEventListener("click", function () {
             document.getElementById("loginDropdown").classList.toggle("hidden");
+        });
+        
+        // Toggle Pages Dropdown
+        document.getElementById("pagesDropdownBtn").addEventListener("click", function () {
+            document.getElementById("pagesDropdown").classList.toggle("hidden");
         });
 
         // Close menu when clicking outside (for mobile)

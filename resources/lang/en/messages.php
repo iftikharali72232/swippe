@@ -160,4 +160,8 @@ return [
     'we_offer_card2' => "Competitive<br> Prices",
     'we_offer_card3' => "Simple & <br> Fast Procedures",
     'we_offer_card4' => "Continuous <br>Technical Support",
+    'pages' => "Pages",
+    'cart' => "Cart",
+    'checkout' => "Checkout",
+    'order_process' => "Order Process",
 ];
