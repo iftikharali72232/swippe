@@ -108,7 +108,7 @@
                                 </button>
 
                                 <!-- Dropdown Menu -->
-                                <div id="pagesDropdown" class="hidden lg:absolute lg:mt-2 bg-white lg:min-w-[180px] w-full lg:shadow-lg rounded-md">
+                                <div id="pagesDropdown" class="hidden lg:absolute lg:mt-2 bg-white lg:min-w-[200px] w-full lg:shadow-lg rounded-md">
                                     <a href="/about_us" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
                                         {{ __('messages.about_title') }}
                                     </a>
