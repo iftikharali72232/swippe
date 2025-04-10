@@ -65,4 +65,28 @@ Route::middleware(['language'])->group(function () {
     Route::get('/privacy_policy', function () {
         return view('privacy_policy');
     });
+
+    Route::get('/terms_and_conditions', function () {
+        return view('terms_and_conditions');
+    });
+
+    Route::get('/shipping_guidelines', function () {
+        return view('shipping_guidelines');
+    });
+
+    Route::get('/prohibited_materials', function () {
+        return view('prohibited_materials');
+    });
+
+    Route::get('/coupons', function () {
+        return view('coupons');
+    });
+
+    Route::get('/faq', function () {
+        return view('faq');
+    });
+
+    Route::get('/contact', function () {
+        return view('contact');
+    });
 });

@@ -144,6 +144,30 @@
                                     <a href="/privacy_policy" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
                                         {{ __('messages.privacy_policy') }}
                                     </a>
+                                    
+                                    <a href="/terms_and_conditions" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.terms_and_conditions') }}
+                                    </a>
+                                    
+                                    <a href="/shipping_guidelines" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.shipping_guidelines') }}
+                                    </a>
+                                    
+                                    <a href="/prohibited_materials" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.prohibited_materials') }}
+                                    </a>
+                                    
+                                    <a href="/coupons" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.coupons') }}
+                                    </a>
+                                    
+                                    <a href="/faq" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.faq') }}
+                                    </a>
+                                    
+                                    <a href="/contact" class="block px-4 py-2 text-black hover:bg-gray-100 hover:rounded-md">
+                                        {{ __('messages.contact_us') }}
+                                    </a>
                                 </div>
                             </div>
                         </div>

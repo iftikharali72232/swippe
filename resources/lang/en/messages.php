@@ -164,4 +164,160 @@ return [
     'cart' => "Cart",
     'checkout' => "Checkout",
     'order_process' => "Order Process",
+
+    'contact_us_desc' => "We're here to help! If you have any questions, need assistance, or want to get in touch with our team, feel free to contact us using any of the following methods:",
+    'terms_and_conditions' => "Terms & Conditions",
+    'terms_and_conditions_desc' => "<span class='font-semibold'>Welcome to <span class='text-roti-400 font-semibold'>SWIPPE</span>.</span> By using this website, you agree to adhere to the following terms and conditions. If you do not agree with these terms, please do not use the website.",
+    'acceptance_of_terms' => "1. Acceptance of Terms",
+    'acceptance_of_terms_desc' => "By accessing and using this website, you fully agree to these terms and conditions. If you do not agree with any of these terms, you must immediately stop using the website.",
+    'acceptance_of_terms_desc' => "By accessing and using this website, you fully agree to these terms and conditions. If you do not agree with any of these terms, you must immediately stop using the website.",
+    'tc_registration' => "2. Registration",
+    'tc_registration_desc' => "To use certain services on the site, such as creating shipping labels, you may need to register and create a personal account. You are required to provide accurate and truthful information when registering. You are responsible for maintaining the confidentiality of your account and password.",
+    'use_of_the_website' => "3. Use of the Website",
+    'use_of_the_website_desc1' => "<span class='font-medium'>Permitted Purpose:</span> You are only allowed to use the website to create shipping labels or request shipping services in a lawful manner.",
+    'use_of_the_website_desc2' => "<span class='font-medium'>Compliance with Laws:</span> You must comply with all applicable  laws while using the website.",
+    'service_provided' => "4. Services Provided",
+    'service_provided_desc' => "The website provides services for creating shipping labels and facilitating the shipping process. We do not provide direct shipping services but act as an intermediary between you and the approved shipping companies.",
+    'payments' => "5. Payments",
+    'payments_desc' => "Certain services may require payment of fees. These fees will be clearly stated when the service is provided and are payable through the payment methods available on the site.",
+    'intellectual_property' => "6. Intellectual Property Rights",
+    'intellectual_property_desc1' => "All content on the website, including text, images, logos, and software, is the exclusive property of [Website Name] or is licensed to it.",
+    'intellectual_property_desc2' => "You are not permitted to use any of this content for commercial or personal purposes without the explicit permission of the website.",
+    'shipping_guidelines_desc' => "<span class='font-semibold'>Welcome to <span class='text-roti-400 font-semibold'>SWIPPE</span>.</span> Below are our shipping guidelines to ensure a smooth and efficient shipping process for all our customers.",
+    'shipping_methods' => "1. Shipping Methods",
+    'shipping_methods_desc' => "We work with trusted shipping carriers to ensure timely and reliable delivery of your packages. The available shipping methods will be provided during the checkout process, and you can choose the one that best suits your needs.",
+    'shipping_charges' => "2. Shipping Charges",
+    'shipping_charges_desc1' => "Shipping charges are determined based on:",
+    'shipping_charges_desc2' => "Package weight",
+    'shipping_charges_desc3' => "Package dimensions",
+    'shipping_charges_desc4' => "Destination address",
+    'shipping_charges_desc5' => "Selected shipping method",
+    'shipping_charges_desc6' => "You will be provided with the total shipping cost during the checkout process before you confirm your order.",
+    'processing_time' => "3. Processing Time",
+    'processing_time_desc1' => "Orders placed before [time, e.g., 12:00 PM] will be processed the same business day.",
+    'processing_time_desc2' => "Orders placed after [time] will be processed the next business day.",
+    'processing_time_desc3' => "Please note that processing time does not include shipping time and is subject to availability.",
+    'shipping_destinations' => "4. Shipping Destinations",
+    'shipping_destinations_desc1' => "We currently offer shipping to the following destinations:",
+    'shipping_destinations_desc2' => "[List of countries or regions where you ship]",
+    'shipping_destinations_desc3' => "For international orders, additional customs duties or taxes may apply depending on the destination country.",
+    'tracking_shipments' => "5. Tracking Shipments",
+    'tracking_shipments_desc' => "Once your order has been shipped, you will receive a shipping confirmation email with a tracking number. You can use this tracking number to track the status of your shipment through the respective carrier's website.",
+    'delivery_times' => "6. Delivery Times",
+    'delivery_times_desc1' => "Domestic shipping: Estimated delivery time is [X] business days.",
+    'delivery_times_desc2' => "International shipping: Estimated delivery time is [X] to [X] business days.",
+    'delivery_times_desc3' => "Please note that delivery times are estimates and may vary based on external factors such as weather conditions, carrier delays, or customs processing.",
+
+    'prohibited_materials' => 'Prohibited Materials',
+    'prohibited_materials_desc' => "At <span class='text-roti-400 font-semibold'>SWIPPE</span>, we strive to ensure that all shipments comply with the law and regulations. For this reason, certain materials are prohibited from being shipped through our platform.",
+
+    'hazardous_materials' => '1. Hazardous Materials',
+    'hazardous_materials_desc' => 'The following items are considered hazardous and cannot be shipped:',
+    'hazardous_materials_list' => [
+        'Flammable liquids or solids',
+        'Explosives and fireworks',
+        'Radioactive materials',
+        'Toxic chemicals and substances',
+        'Compressed gases',
+    ],
+
+    'perishable_items' => '2. Perishable Items',
+    'perishable_items_list' => [
+        'Foods or beverages that require refrigeration',
+        'Items with a short shelf life (unless otherwise specified)',
+        'Items that may spoil or decay during shipping',
+    ],
+
+    'illegal_items' => '3. Illegal Items',
+    'illegal_items_list' => [
+        'Narcotics, drugs, or any controlled substances',
+        'Counterfeit products, fake goods, or pirated content',
+        'Stolen property or items obtained illegally',
+        'Any other items that violate local, national, or international laws',
+    ],
+
+    'live_animals' => '4. Live Animals',
+    'live_animals_desc' => 'Live animals or insects, including but not limited to pets, fish, or other creatures, are prohibited unless specifically authorized by shipping carriers under strict conditions.',
+
+    'weapons_ammunition' => '5. Weapons and Ammunition',
+    'weapons_ammunition_list' => [
+        'Firearms, explosives, and ammunition',
+        'Knives, swords, or other dangerous weapons',
+        'Items that may be used as a weapon or could cause harm',
+    ],
+
+    'money_valuables' => '6. Money and Valuables',
+    'money_valuables_list' => [
+        'Cash, coins, or any form of currency',
+        'Precious metals, gemstones, or other high-value items',
+        'Rare collectibles or art without appropriate insurance',
+    ],
+    'stay_tuned_for_exciting' => 'Stay tuned for exciting offers and discounts!',
+    'no_active_coupons' => 'Currently, there are no active coupons available. However, you can check back later for new deals.',
+    'faq_title' => 'FAQ (Frequently Asked Questions)',
+    'faq_questions' => [
+        [
+            'question' => 'What is SWIPPE?',
+            'answer' => 'SWIPPE is a modern shipping platform that helps individuals and businesses easily create shipping labels, track shipments, and manage deliveries across various carriers.',
+        ],
+        [
+            'question' => 'How do I create a shipping label?',
+            'answer' => 'You can create a shipping label by logging into your SWIPPE account, entering your package details and destination, choosing a carrier and service level, and then printing the label.',
+        ],
+        [
+            'question' => 'Do I need to have an account to use the service?',
+            'answer' => 'While some features are accessible without an account, creating an account allows you to save shipping preferences, access tracking history, and manage multiple shipments easily.',
+        ],
+        [
+            'question' => 'What shipping carriers do you support?',
+            'answer' => 'SWIPPE supports major carriers including USPS, FedEx, UPS, and DHL, allowing you to choose the best option for your shipping needs.',
+        ],
+        [
+            'question' => 'How do I track my shipment?',
+            'answer' => 'Once your shipping label is created, you will receive an email with a tracking number. You can use this number to track your shipment on the carrier’s website.',
+        ],
+        [
+            'question' => 'What should I do if my package is lost or damaged?',
+            'answer' => 'If your package is lost or damaged, please contact the carrier directly to file a claim. You can also reach out to SWIPPE support for guidance and assistance with the process.',
+        ],
+        [
+            'question' => 'Can I use the service for international shipping?',
+            'answer' => 'Yes, SWIPPE supports international shipping through various carriers. Make sure to review customs requirements and restrictions for your destination country before sending.',
+        ],
+        [
+            'question' => 'What types of items can I ship?',
+            'answer' => 'You can ship most common household, business, and personal items. However, prohibited items such as hazardous materials, perishables, and restricted goods may not be eligible for shipment.',
+        ],
+    ],
+
+    'prv_privacy_policy' => 'Privacy Policy',
+    'prv_privacy_policy_description' => 'At <span class="text-roti-400 font-semibold">SWIPPE</span> we place great importance on the privacy of our users and are committed to protecting your personal information according to the highest security standards.',
+
+    'prv_collection_of_personal_information' => '1. Collection of Personal Information',
+    'prv_collection_info_description' => 'We collect the personal information that you provide when using our website, including:',
+    'prv_name' => 'Name',
+    'prv_email_address' => 'Email address',
+    'prv_shipping_address' => 'Shipping address',
+    'prv_phone_number' => 'Phone number',
+    'prv_payment_details' => 'Payment details (if available)',
+
+    'prv_use_of_information' => '2. Use of Information',
+    'prv_use_info_description' => 'We use the information we collect to better provide our services, such as:',
+    'prv_create_shipping_labels' => 'Creating shipping labels',
+    'prv_process_orders' => 'Processing orders',
+    'prv_send_shipping_updates' => 'Sending updates about the shipping status',
+    'prv_improve_user_experience' => 'Improving user experience',
+
+    'prv_protection_of_information' => '3. Protection of Information',
+    'prv_protection_info_description' => 'We are committed to protecting your personal data from unauthorized access or manipulation by using modern encryption techniques and appropriate security measures.',
+
+    'prv_sharing_of_information' => '4. Sharing of Information',
+    'prv_sharing_info_description' => 'We do not sell or rent your personal information to any third party. We may share some information with shipping companies or trusted third parties only to facilitate the shipping service.',
+
+    'prv_cookies' => '5. Cookies',
+    'prv_cookies_description' => 'We use cookies to improve website performance and offer a personalized user experience. You can disable cookies through your browser settings.',
+
+    'prv_right_to_access_and_modify' => '6. Right to Access and Modify',
+    'prv_right_info_description' => 'You can request access to your personal information or modify it at any time through your account on our website.',
+
 ];
